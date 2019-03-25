@@ -27,5 +27,8 @@
     "sass": "^1.17.3",
     "sass-loader": "7.*",
     "webpack-livereload-plugin": "^1.2.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
   }
 }
