@@ -1,15 +1,16 @@
 $body-color: #2d2d2d;
 $body-bg: rgb(204, 204, 204);
 $green: #3cbcae;
+$blue: #479099;
 
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
 
 body {
   margin: 0;
-  padding: 0;
-  //   font: 14px/20px "Open Sans", Arial, Tahoma, sans-serif;
-  font-family: probapro-regular, sans-serif;
+  padding: 10px 0 0 0;
+  font-family: 'Ubuntu', sans-serif;
   color: $body-color;
   background-color: $body-bg;
 }
@@ -17,8 +18,7 @@ body {
 .page {
   background: white;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
+  margin: 0 auto 0.5cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 
   &[size="A4"] {
@@ -31,17 +31,31 @@ body {
   body,
   .page {
     margin: 0;
-    box-shadow: 0;
+    box-shadow: none;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+
+  .col {
+    padding: 0 4px;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+}
+
+.section {
+  margin-bottom: 1rem;
 }
 
 .panel {
   padding: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 
   &--green {
     background-color: $green;
@@ -55,22 +69,24 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 
   &__photo {
-      margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   &__name {
-    font-size: 24px;
-    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 4px;
   }
 
   &__years {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     margin-bottom: 10px;
   }
 
   &__title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
   }
 }
@@ -96,118 +112,123 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contacts {
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
 
-    &__item {
-        color: $body-color;
-        margin-bottom: 4px;
-    }
+  &__item {
+    font-family: 'Ubuntu', sans-serif;
+    color: $body-color;
+    margin-bottom: 4px;
+  }
 
-    &__link {
-        text-decoration: none;
-        color: $body-color;
-    }
+  &__link {
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  &__icon {
+    color: $green;
+    margin-right: 4px;
+  }
 }
 
 .title {
-    font-family: "Raleway", sans-serif;
-    color: #3ec0b2;
-    font-size: 22px;
-    font-weight: 600;
+  display: block;
+  text-align: left;
+  color: #3ec0b2;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-// @media print {
-//     body{
-//         width: 21cm;
-//         height: 29.7cm;
-//         margin: 30mm 45mm 30mm 45mm;
-//         /* change the margins as you want them to be. */
-//    }
-// }
+.subtitle {
+  font-size: 18px;
+  min-height: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
 
+.timeline {
+  padding-left: 40px;
+  position: relative;
 
-.socials {
-  margin-top: 15px;
-  div {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    li {
+  &__point {
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 4px solid $green;
+  }
+
+  &__line {
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: $green;
+    left: 8px;
+    top: 18px;
+  }
+}
+
+.experience {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+  &__title {
+    font-size: 18px;
+    min-height: 18px;
+    line-height: 18px;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    min-height: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+
+  &__label {
+    font-size: 16px;
+    min-height: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: $blue;
+  }
+}
+
+.skills {
+  padding-left: 20px;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    font-size: 16px;
+    min-height: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    &:before {
+      content: "\2022";
+      color: $blue;
+      font-weight: bold;
       display: inline-block;
-      text-align: center;
+      width: 1em;
+      margin-left: -1em;
     }
   }
-}
-
-.socials li {
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #6b6b6b;
-}
-
-.socials li a {
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #6b6b6b;
-}
-p {
-  text-align: left;
-  color: #949494;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
-.center {
-  text-align: center;
-}
-section {
-  position: relative;
-  h3 {
-    text-align: left;
-    text-transform: uppercase;
-    color: #565656;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 28px;
-  }
-
-  margin: 15px 0;
-  // position: relative;
-  text-align: center;
-//   .title {
-//     position: relative;
-//     font-family: Montserrat;
-//     font-size: 18px;
-//     font-weight: 700;
-//     line-height: 42px;
-//     z-index: 999;
-//     display: inline-block;
-//     margin: 0 auto;
-//     padding: 0 25px;
-//     text-align: center;
-//     text-align: center;
-//     text-transform: uppercase;
-//     color: #6b6b6b;
-//     background-color: white;
-//     overflow: hidden;
-//   }
-}
-
-.titler {
-    display: none;
-  position: absolute;
-  media: print;
-  z-index: 0;
-  top: 19px;
-  width: 100%;
-  height: 3px;
-  background-color: #e0e0e0;
 }
