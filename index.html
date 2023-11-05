@@ -8,7 +8,7 @@
 	<link href="/dist/app.css" rel="stylesheet">
 </head>
 <body class="flex flex-col items-center justify-center p-10 bg-zinc-200 font-sans">
-	<div class="w-[21cm] min-h-[29.7cm] bg-white shadow-2xl">
+	<div class="max-w-5xl mx-auto bg-white shadow-2xl">
 		<header class="px-16 py-6 bg-gradient-to-r from-teal-600 to-sky-600">
 			<div class="flex items-center">
 				<img src="/dist/me.jpg" alt="Vitalii Kalaida's photo" class="shrink-0 w-32 h-32 bg-white rounded-full object-cover border-[8px] border-white">
@@ -41,174 +41,205 @@
 			</div>
 		</header>
 
-		<main class="px-16 py-12 space-y-8">
-			<section>
-				<h2 class="text-sky-800 text-2xl font-medium uppercase">
-					Skills
-				</h2>
+		<main>
+			<div class="px-16 py-12 grid grid-cols-3 gap-x-16 gap-y-8">
+				<div class="col-span-2">
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Work Experience
+						</h2>
 
-				<ul class="mt-4 pl-5 list-disc leading-relaxed">
-					<li>
-						PHP, Laravel, Livewire, PHPUnit, Dusk
-					</li>
-					<li>
-						Javascript, Vue.JS, Nuxt.JS, Inertia.JS
-					</li>
-					<li>
-						PostgreSQL, MySQL, Redis, Meilisearch
-					</li>
-					<li>
-						REST API, WebSocket
-					</li>
-					<li>
-						Docker, Grafana, Prometheus, Loki
-					</li>
-					<li>
-						HTML, CSS, Tailwind CSS
-					</li>
-				</ul>
-			</section>
+						<div class="mt-4 space-y-6">
+							<div>
+								<h3 class="font-semibold">
+									Senior Full Stack Web Developer
+								</h3>
 
-			<section>
-				<h2 class="text-sky-800 text-2xl font-medium uppercase">
-					Work Experience
-				</h2>
+								<div class="mt-1">
+									<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
+								</div>
 
-				<div class="mt-4 space-y-6">
-					<div>
-						<h3 class="font-semibold">
-							Senior Full Stack Web Developer
-						</h3>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										February 2022 – November 2023
+									</div>
 
-						<div class="mt-1">
-							<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
-						</div>
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Delaware, US (remote)
+									</div>
+								</div>
 
-						<div class="mt-2 grid grid-cols-2 text-sm">
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
-								</svg>
-								February 2022 – November 2023
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Designed and implemented various applications, such as a high-load university catalog, CRM app with a Kanban board for lead management, real-time chat for live communications, advertising platform.</li>
+									<li>Configured a Grafana and Prometheus stack for logging and monitoring application metrics, enabling real-time detection of areas for improvement.</li>
+									<li>Enhanced application load speed through in-depth analysis of PostgreSQL slow statements and the extraction of frequently accessed endpoints into separate services.</li>
+									<li>Implemented a CI pipeline using GitHub Actions workflows, ensuring code quality and deployment efficiency.</li>
+									<li>Optimized team development processes based on YAGNI principles, resulting in a better code readability and up to 40% reduction in development time.</li>
+								</ul>
 							</div>
 
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-								</svg>
-								Delaware, US (remote)
-							</div>
-						</div>
+							<div>
+								<h3 class="font-semibold">
+									Middle Full Stack Web Developer
+								</h3>
 
-						<ul class="mt-3 pl-4 list-disc text-sm leading-relaxed">
-							<li>Designed and implemented various applications, such as a high-load university catalog, CRM app with a Kanban board for lead management, real-time chat for live communications, advertising platform.</li>
-							<li>Configured a Grafana and Prometheus stack for logging and monitoring application metrics, enabling real-time detection of areas for improvement.</li>
-							<li>Enhanced application load speed through in-depth analysis of PostgreSQL slow statements and the extraction of frequently accessed endpoints into separate services.</li>
-							<li>Implemented a CI pipeline using GitHub Actions workflows, ensuring code quality and deployment efficiency.</li>
-							<li>Optimized team development processes based on YAGNI principles, resulting in a better code readability and 15-40% reduction in development time.</li>
-						</ul>
-					</div>
+								<div class="mt-1">
+									<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
+								</div>
 
-					<div>
-						<h3 class="font-semibold">
-							Middle Full Stack Web Developer
-						</h3>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										August 2017 – February 2022
+									</div>
 
-						<div class="mt-1">
-							<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
-						</div>
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Kyiv, Ukraine
+									</div>
+								</div>
 
-						<div class="mt-2 grid grid-cols-2 text-sm">
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
-								</svg>
-								August 2017 – February 2022
-							</div>
-
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-								</svg>
-								Kyiv, Ukraine
-							</div>
-						</div>
-
-						<ul class="mt-3 pl-4 list-disc text-sm leading-relaxed">
-							<li>Designed and developed applications using Nuxt.js and the Laravel framework.</li>
-							<li>Implemented Docker configurations for different environments, ensuring consistent and reproducible deployments.</li>
-							<li>Increased code safety by writing 5000+ tests using PHPUnit, resulting in enhanced code quality and reliability.</li>
-							<li>Implemented a Live Chat feature with file attachments using WebSocket, Echo Server, Redis, and Amazon S3 for real-time communication.</li>
-							<li>Integrated and configured Meilisearch as a search engine, creating a custom score calculator for records based on specific criteria, enhancing search functionality.</li>
-							<li>Added localization support for both the UI and database layer.</li>
-							<li>Automated code style formatting using Prettier, ESLint, and PHP CS Fixer.</li>
-						</ul>
-					</div>
-
-					<div>
-						<h3 class="font-semibold">
-							Junior Full Stack Web Developer
-						</h3>
-
-						<div class="mt-1">
-							<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
-						</div>
-
-						<div class="mt-2 grid grid-cols-2 text-sm">
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
-								</svg>
-								August 2017 – February 2022
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Designed and developed applications using Nuxt.js and the Laravel framework.</li>
+									<li>Implemented Docker configurations for different environments, ensuring consistent and reproducible deployments.</li>
+									<li>Increased code safety by writing 5000+ tests using PHPUnit, resulting in enhanced code quality and reliability.</li>
+									<li>Implemented a Live Chat feature with file attachments using WebSocket, Echo Server, Redis, and Amazon S3 for real-time communication.</li>
+									<li>Integrated and configured Meilisearch as a search engine, creating a custom score calculator for records based on specific criteria, enhancing search functionality.</li>
+									<li>Added localization support for both the UI and database layer.</li>
+									<li>Automated code style formatting using Prettier, ESLint, and PHP CS Fixer.</li>
+								</ul>
 							</div>
 
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-								</svg>
-								Kyiv, Ukraine
+							<div>
+								<h3 class="font-semibold">
+									Junior Full Stack Web Developer
+								</h3>
+
+								<div class="mt-1">
+									<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
+								</div>
+
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										August 2017 – February 2022
+									</div>
+
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Kyiv, Ukraine
+									</div>
+								</div>
+
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Built and managed single-page applications using Vue.js for dynamic and responsive user interfaces.</li>
+									<li>Improved web performance based on recommendations from Google PageSpeed Insights, resulting in faster loading times and a smoother user experience.</li>
+									<li>Created and maintained semantic and SEO-friendly pages to improve search engine visibility and user interaction.</li>
+								</ul>
 							</div>
-						</div>
 
-						<ul class="mt-3 pl-4 list-disc text-sm leading-relaxed">
-							<li>Built and managed single-page applications using Vue.js for dynamic and responsive user interfaces.</li>
-							<li>Improved web performance based on recommendations from Google PageSpeed Insights, resulting in faster loading times and a smoother user experience.</li>
-							<li>Created and maintained semantic and SEO-friendly pages to improve search engine visibility and user interaction.</li>
-						</ul>
-					</div>
+							<div>
+								<h3 class="font-semibold">
+									Junior Back End Web Developer
+								</h3>
 
-					<div>
-						<h3 class="font-semibold">
-							Junior Back End Web Developer
-						</h3>
+								<p class="mt-1">
+									<a href="https://thinkmobiles.com" target="_blank" class="text-sm font-medium">ThinkMobiles</a>
+								</p>
 
-						<p class="mt-1">
-							<a href="https://thinkmobiles.com" target="_blank" class="text-sm font-medium">ThinkMobiles</a>
-						</p>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										March 2017 – August 2017
+									</div>
 
-						<div class="mt-2 grid grid-cols-2 text-sm">
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
-								</svg>
-								March 2017 – August 2017
-							</div>
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Uzhhorod, Ukraine
+									</div>
+								</div>
 
-							<div class="flex items-center">
-								<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
-									<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-								</svg>
-								Uzhhorod, Ukraine
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Developed and maintained outsourced websites using the Laravel framework and various CMS platforms.</li>
+									<li>Integrated custom plugins into Shopify ecommerce platforms.</li>
+								</ul>
 							</div>
 						</div>
-
-						<ul class="mt-3 pl-4 list-disc text-sm leading-relaxed">
-							<li>Developed and maintained outsourced websites using the Laravel framework and various CMS platforms.</li>
-							<li>Integrated custom plugins into Shopify ecommerce platforms.</li>
-						</ul>
-					</div>
+					</section>
 				</div>
-			</section>
+
+				<div class="col-span-1 space-y-12">
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Skills
+						</h2>
+
+						<ul class="mt-4 pl-5 list-disc leading-relaxed">
+							<li>
+								PHP, Laravel, Livewire, PHPUnit, Dusk
+							</li>
+							<li>
+								Javascript, Vue.JS, Nuxt.JS, Inertia.JS
+							</li>
+							<li>
+								PostgreSQL, MySQL, Redis, Meilisearch
+							</li>
+							<li>
+								REST API, WebSocket
+							</li>
+							<li>
+								Docker, Grafana, Prometheus, Loki
+							</li>
+							<li>
+								HTML, CSS, Tailwind CSS
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Education
+						</h2>
+
+						<div class="mt-4">
+							<h3 class="font-semibold">
+								Bachelor's Degree of Electronics
+							</h3>
+
+							<p class="mt-2">
+								National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
+							</p>
+
+							<div class="mt-3">
+								<div class="flex items-center text-sm">
+									<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+										<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+									</svg>
+									2012 – 2016
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
 		</main>
 	</div>
 </body>
