@@ -1,173 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Vitalii Kalaida</title>
-  <meta name="description" content="" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="favicon.png" />
-  <link rel="stylesheet" href="/public/css/app.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vitalii Kalaida</title>
+	<link href="/dist/app.css" rel="stylesheet">
 </head>
+<body class="flex flex-col items-center justify-center p-10 bg-zinc-200 font-sans">
+	<div class="max-w-5xl mx-auto bg-white shadow-2xl">
+		<header class="px-16 py-6 bg-gradient-to-r from-teal-600 to-sky-600">
+			<div class="flex items-center">
+				<img src="/dist/me.jpg" alt="Vitalii Kalaida's photo" class="shrink-0 w-32 h-32 bg-white rounded-full object-cover border-[6px] border-white">
 
-<body>
-  <div class="page" size="A4">
-    <div class="container">
+				<div class="ml-12">
+					<h1 class="text-3xl font-semibold text-white tracking-wide uppercase">Vitalii Kalaida</h1>
 
-      <div class="header panel panel--green">
-        <div class="header__photo photo">
-          <img src="/public/images/0.jpg" class="photo__image">
-        </div>
+					<p class="mt-2 text-xl text-white tracking-wide">Full Stack Web Developer</p>
 
-        <h2 class="header__name">Vitalii Kalaida</h2>
-        <h4 class="header__years">24 years old</h4>
-          <h3 class="header__title">Middle Full-Stack Developer</h3>
-      </div>
+					<ul class="mt-5 flex space-x-6">
+						<li>
+							<a href="mailto:nevadskiy@gmail.com" target="_blank" class="flex items-center text-sm font-medium text-white">
+								<svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+								</svg>
+								nevadskiy@gmail.com
+							</a>
+						</li>
 
+						<li>
+							<a href="https://github.com/nevadskiy" target="_blank" class="flex items-center text-sm font-medium text-white">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5">
+									<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+								</svg>
+								nevadskiy
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-      <ul class="contacts">
-        <li class="contacts__item"><i class="contacts__icon fas fa-map-marker-alt"></i> Kyiv, Ukraine</li>
-        <li class="contacts__item"><a class="contacts__link" href="mailto:kalaidavitalii@gmail.com"><i class="contacts__icon far fa-envelope"></i> kalaidavitalii@gmail.com</a></li>
-        <li class="contacts__item"><a class="contacts__link" href="skype:omnomah"><i class="contacts__icon fab fa-skype"></i> omnomah</a></li>
-        <li class="contacts__item"><a class="contacts__link" href="https://github.com/nevadskiy"><i class="contacts__icon fab fa-github"></i> nevadskiy</a></li>
-        <!-- <li class="contacts__item"><a href="tel:+380965228063"><i class="fa fa-phone" aria-hidden="true"></i> +38 096 522 80 63</a></li> -->
-      </ul>
+		<main>
+			<div class="px-16 py-12 grid grid-cols-3 gap-x-16 gap-y-8">
+				<div class="col-span-2 space-y-12">
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Profile
+						</h2>
 
-      <!-- <section>
-        <span class="title">Objective</span>
-        <div class="titler"></div>
-        <p class="center">
-          maintainable, testable, documentable clean solutions using industry best practices and modern design patterns
+						<p class="mt-4">
+							Full Stack Developer with 7 years of professional experience in web development.
+							Proficient in delivering user-centric features by adhering to best practices and prioritizing code maintainability.
+							An advocate of the YAGNI principle and practitioner of Test-Driven Development.
+						</p>
+					</section>
 
-          I seek challenging opportunities where I can fully use my skills for the success of the company.
-        </p>
-      </section> -->
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Work Experience
+						</h2>
 
-      <div class="columns">
-        <div class="col">
-          <section class="section">
-            <span class="title">Experience</span>
+						<div class="mt-4 space-y-6">
+							<div>
+								<h3 class="font-semibold">
+									Senior Full Stack Web Developer
+								</h3>
 
-            <div class="experience timeline">
-              <span class="timeline__point"></span>
-              <span class="timeline__line"></span>
+								<div class="mt-1">
+									<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
+								</div>
 
-              <span class="experience__title">Full-Stack Developer</span>
-              <span class="experience__subtitle">LLC Free Apply (free-apply.com)</span>
-              <span class="experience__label">08/2017 - Present</span>
-            </div>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										February 2022 – November 2023
+									</div>
 
-            <!--<p>Building <a href="https://free-apply.com">Free-apply.com</a> project. Deployment, Web-socket integration, Redis integration, S3 integration, performance optimizations, code review, API integrations, coding Vue.JS front-end, Laravel back-end, search engine integration</p>-->
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Delaware, US (remote)
+									</div>
+								</div>
 
-            <div class="experience timeline">
-              <span class="timeline__point"></span>
-              <span class="timeline__line"></span>
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Designed and implemented various applications, such as a high-load university catalog, CRM app with a Kanban board for lead management, real-time chat for live communications, advertising platform.</li>
+									<li>Configured a Grafana and Prometheus stack for logging and monitoring application metrics, enabling real-time detection of areas for improvement.</li>
+									<li>Enhanced application load speed through in-depth analysis of PostgreSQL slow statements and the extraction of frequently accessed endpoints into separate services.</li>
+									<li>Implemented a CI pipeline using GitHub Actions workflows, ensuring code quality and deployment efficiency.</li>
+									<li>Optimized team development processes based on YAGNI principles, resulting in a better code readability and up to 40% reduction in development time.</li>
+								</ul>
+							</div>
 
-              <span class="experience__title">Full-Stack Developer</span>
-              <span class="experience__subtitle">ThinkMobiles</span>
-              <span class="experience__label">03/2017 - 08/2017</span>
-            </div>
+							<div>
+								<h3 class="font-semibold">
+									Middle Full Stack Web Developer
+								</h3>
 
-            <div class="experience timeline">
-              <span class="timeline__point"></span>
+								<div class="mt-1">
+									<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
+								</div>
 
-              <span class="experience__title">Front End Developer</span>
-              <!--<span class="experience__subtitle"></span>-->
-              <span class="experience__label">07/2015 - 03/2017</span>
-            </div>
-          </section>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										August 2017 – February 2022
+									</div>
 
-          <section class="section">
-            <span class="title">Education</span>
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Kyiv, Ukraine
+									</div>
+								</div>
 
-            <ul class="skills">
-              <li class="skills__item">
-                <div class="experience">
-                  <span class="experience__title">Bachelor’s Degree of Electronics</span>
-                  <span class="experience__subtitle">National Technical University of Ukraine <br> "Igor Sikorsky Kyiv Polytechnic Institute"</span>
-                  <span class="experience__label">2012 - 2016</span>
-                </div>
-              </li>
-            </ul>
-          </section>
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Designed and developed applications using Nuxt.js and the Laravel framework.</li>
+									<li>Implemented Docker configurations for different environments, ensuring consistent and reproducible deployments.</li>
+									<li>Increased code safety by writing 5000+ tests using PHPUnit, resulting in enhanced code quality and reliability.</li>
+									<li>Implemented a Live Chat feature with file attachments using WebSocket, Echo Server, Redis, and Amazon S3 for real-time communication.</li>
+									<li>Integrated and configured Meilisearch as a search engine, creating a custom score calculator for records based on specific criteria, enhancing search functionality.</li>
+									<li>Added localization support for both the UI and database layer.</li>
+									<li>Automated code style formatting using Prettier, ESLint, and PHP CS Fixer.</li>
+								</ul>
+							</div>
 
-          <section class="section">
-            <span class="title">Languages</span>
+							<div>
+								<h3 class="font-semibold">
+									Junior Full Stack Web Developer
+								</h3>
 
-            <ul class="skills">
-              <li class="skills__item">English - Intermediate</li>
-              <li class="skills__item">Ukrainian - Native</li>
-              <li class="skills__item">Russian - Native</li>
-            </ul>
-          </section>
+								<div class="mt-1">
+									<a href="https://free-apply.com" target="_blank" class="text-sm font-medium">Free Apply, LLC</a>
+								</div>
 
-          <section class="section">
-            <span class="title">Personal Qualities</span>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										August 2017 – February 2022
+									</div>
 
-            <ul class="skills">
-              <li class="skills__item">Responsible, self-organized, ambitious</li>
-              <li class="skills__item">Goal oriented, attentive to details</li>
-              <li class="skills__item">Open-minded, purposeful</li>
-            </ul>
-          </section>
-        </div>
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Kyiv, Ukraine
+									</div>
+								</div>
 
-        <div class="col">
-          <section class="section">
-            <span class="title">Skills</span>
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Built and managed single-page applications using Vue.js for dynamic and responsive user interfaces.</li>
+									<li>Improved web performance based on recommendations from PageSpeed Insights, resulting in faster loading times and a smoother user experience.</li>
+									<li>Created and maintained semantic and SEO-friendly pages to improve search engine visibility and user interaction.</li>
+								</ul>
+							</div>
 
-            <h3 class="subtitle">Backend</h3>
-            <ul class="skills">
-              <li class="skills__item">PHP and Laravel, Symfony</li>
-              <li class="skills__item">Test Driven Development, Unit tests</li>
-              <li class="skills__item">PostgreSQL, MySQL</li>
-              <!--<li class=skills__item>Elastic search, Kibana, Logstash</li>-->
-              <li class="skills__item">OPcache, Memcached, Redis</li>
-              <li class="skills__item">RESTful API, WebSocket</li>
-              <li class="skills__item">Docker, Amazon S3</li>
-              <li class="skills__item">OOP/OOD, SOLID and design patterns</li>
-              <li class="skills__item">PSR, DRY, YAGNI and KISS principles</li>
-            </ul>
+							<div>
+								<h3 class="font-semibold">
+									Junior Back End Web Developer
+								</h3>
 
-            <h3 class="subtitle">Front-end</h3>
-            <ul class="skills">
-              <li class="skills__item">HTML, CSS, SASS</li>
-              <li class="skills__item">Javascript, ES6, Vue.JS</li>
-              <li class="skills__item">Single page applications</li>
-              <li class="skills__item">CSS frameworks (Bulma, Bootstrap)</li>
-              <li class="skills__item">BEM methodology</li>
-              <li class="skills__item">npm, yarn</li>
-              <li class="skills__item">Responsive and semantic templates</li>
-            </ul>
+								<p class="mt-1">
+									<a href="https://thinkmobiles.com" target="_blank" class="text-sm font-medium">ThinkMobiles</a>
+								</p>
 
-            <h3 class="subtitle">Tools</h3>
-            <ul class="skills">
-              <li class="skills__item">Linux, Git, Nginx, Apache2, Docker</li>
-              <li class="skills__item">Code metrics, tests coverage, static code analysis</li>
-            </ul>
-          </section>
-        </div>
-      </div>
+								<div class="mt-2 grid grid-cols-2">
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+										</svg>
+										March 2017 – August 2017
+									</div>
 
-      <!--<section>-->
-        <!--<span class="title">Certifications</span>-->
-        <!--<div class="titler"></div>-->
-        <!--<h3>March 2017</h3>-->
-        <!--<p>-->
-          <!--Guru IT School - PHP Specialist-->
-        <!--</p>-->
-        <!--<h3>September 2015</h3>-->
-        <!--<p>-->
-          <!--Lviv IT School - Frontend development-->
-        <!--</p>-->
-      <!--</section>-->
+									<div class="flex items-center text-sm">
+										<svg viewBox="0 0 24 24" aria-label="Location" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+											<path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+										</svg>
+										Uzhhorod, Ukraine
+									</div>
+								</div>
 
-    </div>
-  </div>
-  <script src="http://localhost:35729/livereload.js"></script>
+								<ul class="mt-5 pl-4 list-disc leading-relaxed">
+									<li>Developed and maintained outsourced websites using the Laravel framework and various CMS platforms.</li>
+									<li>Integrated custom plugins into Shopify ecommerce platforms.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-span-1 space-y-12">
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Skills
+						</h2>
+
+						<ul class="mt-4 pl-5 list-disc leading-relaxed">
+							<li>
+								PHP, Laravel, Livewire, PHPUnit, Dusk
+							</li>
+							<li>
+								Javascript, Vue.js, Nuxt.js, Inertia.js
+							</li>
+							<li>
+								PostgreSQL, MySQL, Redis, Meilisearch
+							</li>
+							<li>
+								REST API, WebSocket
+							</li>
+							<li>
+								Docker, Grafana, Prometheus, Loki
+							</li>
+							<li>
+								HTML, CSS, Tailwind CSS
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2 class="text-sky-800 text-2xl font-medium uppercase">
+							Education
+						</h2>
+
+						<div class="mt-4">
+							<h3 class="font-semibold">
+								Bachelor's Degree of Electronics
+							</h3>
+
+							<p class="mt-2">
+								National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
+							</p>
+
+							<div class="mt-3">
+								<div class="flex items-center text-sm">
+									<svg viewBox="0 0 24 24" aria-label="Period" fill="currentColor" class="shrink-0 mr-2 inline-block w-5 h-5 text-zinc-500">
+										<path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+									</svg>
+									2012 – 2016
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+	</div>
 </body>
-
 </html>
